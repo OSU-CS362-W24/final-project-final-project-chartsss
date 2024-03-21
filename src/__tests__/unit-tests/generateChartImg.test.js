@@ -1,8 +1,9 @@
 const generateChartImg = require('../../lib/generateChartImg');
-const fetch = require('node-fetch');
+require("whatwg-fetch")
+//const fetch = require('node-fetch');
 
 // Assign the fetch function to the global scope
-global.fetch = fetch;
+//global.fetch = fetch;
 
 // Create a mock implementation of URL.createObjectURL
 global.URL = {
